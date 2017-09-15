@@ -1,0 +1,14 @@
+body {
+	background-image: url("images/grass-screenshot.png");
+
+	width: 5px;
+}
+
+#box1 {
+	border: solid 5px black;
+	width: 150px;
+	height: 150px;
+	margin-top: 300px;
+	margin-left: 80px;
+	background: grey;
+}
