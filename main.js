@@ -1,2 +1,2 @@
 var numbers = ["5", "2", "8", "1", "4", "8", "1", "4", "7", "1", "9", "3", "6"];
-console.log(numbers[0]);
+console.log(numbers[1]);
