@@ -10,6 +10,34 @@ $(function (){
 
 var $boxes = $(".box");
 
+$boxes.each(function(event) {
+
+		$(this).html(getRandomNumber ());
+
+	});
+
+
+function getRandomNumber () {
+	return Math.floor(Math.random() * 9) + 1;
+
+}
+
+	$(document).on("keypress", function (event) {
+		var numberImput = $(document).keypress();
+		console.log(numberInput);
+		var $currentBoxes = $('.incomplete').html();
+		if (numberImput === $currentBoxes.eq(0)) {
+		$('incomplete').addClass('complete');
+			console.log("correct");
+		}
+
+
+});
+
+	   
+	
+});
+
 // for(var i = 0; i < $boxes.length; i++) {
 
 // // 	if (keypress === getRandomNumber) {
@@ -26,41 +54,52 @@ var $boxes = $(".box");
 
 
 
-$(".boxes").on('click', function() {
-	for(var i= 0; i < $boxes.length; i++) {
-		if($(this).val() === boxes[i]) {
-			console.log("correct");
-		}
+// $(".boxes").on('click', function() {
+// 	for(var i= 0; i < $boxes.length; i++) {
+// 		if($(this).val() === boxes[i]) {
+// 			console.log("correct");
+// 		}
 
-	}
-});
+// 	}
 
 
-	$(document).on("keypress", function (event) {
-	    
-	    console.log(event.key);
-	});
 
-	$boxes.each(function(event) {
 
-		$(this).html(getRandomNumber ());
 
-	});
+	
 
 
 	// if (event.key === valueofbox) {
 	// 	console.log("correct");
 	// }
 
-});
 
 
 
-function getRandomNumber () {
-	return Math.floor(Math.random() * 9) + 1;
 
-}
 
+
+	
+	 //    console.log($currentBoxes);
+	 //    var current = $currentBoxes.eq(0).html();
+	 //    console.log(current);
+
+	 //    if (current === $currentBoxes) {
+
+		// 	console.log("correct");
+		// }
+
+
+
+
+
+
+// });
+
+
+// $( "#other" ).click(function() {
+//   $( "#target" ).keypress();
+// });
 
 // $("#regTitle").html("Hello World");
 
