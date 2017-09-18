@@ -1,14 +1,69 @@
 body {
-	background-image: url("images/grass-screenshot.png");
+	background: green;
+}
 
-	width: 5px;
+.box {
+	font-size: 50px;
+	color: black;
+}
+
+.container {
+	border: solid blue 4px;
+	height: 300px;
+	width: 800px;
+	margin-top: 200px;
+	margin-bottom: 200px;
 }
 
 #box1 {
-	border: solid 5px black;
-	width: 150px;
-	height: 150px;
-	margin-top: 300px;
-	margin-left: 80px;
-	background: grey;
+	height: 50px;
+	width: 50px;
+	border: solid black 4px;
+	margin-top: 120px;
+	position: absolute;
+	background-color: grey;
+}
+
+#box2 {
+	height: 50px;
+	width: 50px;
+	border: solid black 4px;
+	margin-top: 50px;
+	margin-left: 60px;
+	position: absolute;
+	background-color: grey;
+}
+
+
+#box3 {
+	height: 50px;
+	width: 50px;
+	border: solid black 4px;
+	margin-top: 120px;
+	margin-left: 150px;
+	position: absolute;
+	background-color: grey;
+
+}
+
+#box4 {
+	height: 50px;
+	width: 50px;
+	border: solid black 4px;
+	margin-left: 250px;
+	margin-top: 220px;
+	position: absolute;
+	background-color: grey;
+}
+
+
+#box5 {
+	height: 50px;
+	width: 50px;
+	border: solid black 4px;
+	margin-top: 120px;
+	margin-left: 350px;
+	position: absolute;
+	background-color: grey;
+
 }
