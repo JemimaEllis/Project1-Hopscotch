@@ -24,7 +24,8 @@ body {
 	height: 80px;
 	width: 80px;
 	border: solid black 4px;
-	margin-top: 120px;
+	margin-top: 130px;
+	margin-left: 20px;
 	position: absolute;
 	background-color: grey;
 }
@@ -33,43 +34,120 @@ body {
 	height: 80px;
 	width: 80px;
 	border: solid black 4px;
-	margin-top: 10px;
-	margin-left: 120px;
+	margin-top: 0px;
+	margin-left: 130px;
 	position: absolute;
 	background-color: grey;
 }
-
 
 #box3 {
 	height: 80px;
 	width: 80px;
 	border: solid black 4px;
-	margin-top: 120px;
-	margin-left: 240px;
+	margin-top: 130px;
+	margin-left: 260px;
 	position: absolute;
 	background-color: grey;
-
 }
+
 
 #box4 {
 	height: 80px;
 	width: 80px;
 	border: solid black 4px;
-	margin-left: 350px;
-	margin-top: 230px;
+	margin-top: 260px;
+	margin-left: 390px;
 	position: absolute;
 	background-color: grey;
-}
 
+}
 
 #box5 {
 	height: 80px;
 	width: 80px;
 	border: solid black 4px;
-	margin-top: 120px;
-	margin-left: 460px;
+	margin-top: 130px;
+	margin-left: 520px;
+	position: absolute;
+	background-color: grey;
+}
+
+
+#box6 {
+	height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 0px;
+	margin-left: 650px;
 	position: absolute;
 	background-color: grey;
 
 }
 
+#box7 {
+	height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 780px;
+	position: absolute;
+	background-color: grey;
+
+}
+
+#box8 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 260px;
+	margin-left: 910px;
+	position: absolute;
+	background-color: grey;
+
+}
+
+
+#box9 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 1040px;
+	position: absolute;
+	background-color: grey;
+
+}
+
+#box10 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 0px;
+	margin-left: 1170px;
+	position: absolute;
+	background-color: grey;
+
+}
+
+
+#box11 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 1300px;
+	position: absolute;
+	background-color: grey;
+
+}
+
+#box12 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 260px;
+	margin-left: 1430px;
+	position: absolute;
+	background-color: grey;
+
+}
