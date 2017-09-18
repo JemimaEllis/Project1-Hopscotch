@@ -2,9 +2,31 @@ body {
 	background: url("images/grass-screenshot.png");
 }
 
-.box {
+button {
+	background-color: grey;
+	color: black;
+	font-size: 30px;
+	font: bold;
+	margin: 20px 0px 0px 20px;
+	padding: 5px;
+}
+
+.incomplete {
 	font-size: 50px;
 	color: black;
+	background-color: grey;
+	text-align: center;
+	font-style: bold;
+}
+
+.complete {
+	font-size: 50px;
+	background-color: green;
+/*	background-image: url("images/person.svg");
+	background-size: 70px 70px;
+	background-repeat: no-repeat;*/
+	/*background-color: rgba(0, 128, 0, 0.53);*/
+	text-align: center;
 }
 
 .container {
@@ -15,10 +37,7 @@ body {
 	margin-bottom: 200px;
 }
 
-.complete {
-	font-size: 50px;
-	color: green;
-}
+
 
 #box1 {
 	height: 80px;
@@ -27,7 +46,6 @@ body {
 	margin-top: 130px;
 	margin-left: 20px;
 	position: absolute;
-	background-color: grey;
 }
 
 #box2 {
@@ -37,7 +55,6 @@ body {
 	margin-top: 0px;
 	margin-left: 130px;
 	position: absolute;
-	background-color: grey;
 }
 
 #box3 {
@@ -47,7 +64,6 @@ body {
 	margin-top: 130px;
 	margin-left: 260px;
 	position: absolute;
-	background-color: grey;
 }
 
 
@@ -58,8 +74,6 @@ body {
 	margin-top: 260px;
 	margin-left: 390px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 #box5 {
@@ -69,7 +83,6 @@ body {
 	margin-top: 130px;
 	margin-left: 520px;
 	position: absolute;
-	background-color: grey;
 }
 
 
@@ -80,8 +93,6 @@ body {
 	margin-top: 0px;
 	margin-left: 650px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 #box7 {
@@ -91,8 +102,6 @@ body {
 	margin-top: 130px;
 	margin-left: 780px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 #box8 {
@@ -102,8 +111,6 @@ body {
 	margin-top: 260px;
 	margin-left: 910px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 
@@ -114,8 +121,6 @@ body {
 	margin-top: 130px;
 	margin-left: 1040px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 #box10 {
@@ -125,8 +130,6 @@ body {
 	margin-top: 0px;
 	margin-left: 1170px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 
@@ -137,8 +140,6 @@ body {
 	margin-top: 130px;
 	margin-left: 1300px;
 	position: absolute;
-	background-color: grey;
-
 }
 
 #box12 {
@@ -148,6 +149,4 @@ body {
 	margin-top: 260px;
 	margin-left: 1430px;
 	position: absolute;
-	background-color: grey;
-
 }

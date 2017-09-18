@@ -3,10 +3,17 @@
 
 // alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
 
+// var $instructionsButton = $("#instructions");
+
+// $("instructionsButton").click(function() {
+// 		console.log("I've been ckicked!");
+// })
+
 
 $(function (){
 
 
+	
 
 var $boxes = $(".box");
 
@@ -22,6 +29,9 @@ function getRandomNumber () {
 
 }
 
+
+
+
 	$(document).on("keypress", function (event) {
 
 		// console.log(event.key)
@@ -31,16 +41,25 @@ function getRandomNumber () {
 		var currentBoxValue = $('.incomplete').eq(0).html();
 
 		if (numberImput === currentBoxValue) {
-			$('.incomplete').eq(0).removeClass('incomplete').addClass('complete');
+			$(".incomplete").eq(0).removeClass('incomplete').addClass('complete');
 			console.log("correct");
 		}
 
+		if ($(".incomplete").length  === 0) {                                                                        
+	alert("You have completed the game!");
+}
 
+			// var completedBoxValue = $('.complete');
+		// else (currentBoxValue === completedBoxValue) {
+		// 	console.log("I'm done!");
+		// }
+		// once all boxes = complete, alert().
 });
 
 	   
 	
 });
+
 
 // for(var i = 0; i < $boxes.length; i++) {
 
