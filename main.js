@@ -23,11 +23,15 @@ function getRandomNumber () {
 }
 
 	$(document).on("keypress", function (event) {
-		var numberImput = $(document).keypress();
-		console.log(numberInput);
-		var $currentBoxes = $('.incomplete').html();
-		if (numberImput === $currentBoxes.eq(0)) {
-		$('incomplete').addClass('complete');
+
+		// console.log(event.key)
+
+		var numberImput = event.key
+		// console.log(numberInput);
+		var currentBoxValue = $('.incomplete').eq(0).html();
+
+		if (numberImput === currentBoxValue) {
+			$('.incomplete').eq(0).removeClass('incomplete').addClass('complete');
 			console.log("correct");
 		}
 
