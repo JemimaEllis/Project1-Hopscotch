@@ -12,21 +12,45 @@ var $boxes = $(".box");
 
 // for(var i = 0; i < $boxes.length; i++) {
 
-// // console.log(i);
-// 	// $("#box" + i).html(Math.random);
-// 	$boxes:eq(i).html(getRandomNumber);
+// // 	if (keypress === getRandomNumber) {
+// // 		console.log("correct");
+// // 	}
+
+// // // console.log(i);
+// // // 	$("#box" + i).html(Math.random);
+// // // 	$boxes:eq(i).html(getRandomNumber);
 
 
 
-// // }
+// }
 
 
 
-$boxes.each(function(event) {
+$(".boxes").on('click', function() {
+	for(var i= 0; i < $boxes.length; i++) {
+		if($(this).val() === boxes[i]) {
+			console.log("correct");
+		}
 
-	$(this).html(getRandomNumber ());
-
+	}
 });
+
+
+	$(document).on("keypress", function (event) {
+	    
+	    console.log(event.key);
+	});
+
+	$boxes.each(function(event) {
+
+		$(this).html(getRandomNumber ());
+
+	});
+
+
+	// if (event.key === valueofbox) {
+	// 	console.log("correct");
+	// }
 
 });
 
