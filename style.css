@@ -29,6 +29,23 @@ button {
 	text-align: center;
 }
 
+.topbar {
+	height: 100px;
+	width: 200%;
+	background-color: grey;
+	border: black solid 2px;
+}
+
+/*.wrong {
+	font-size: 50px;
+	background-color: red;
+	background-image: url("images/person.svg");
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 128, 0, 0.53);
+	text-align: center;
+}
+*/
 .container {
 	/*border: solid blue 4px;*/
 	height: 300px;
@@ -148,5 +165,77 @@ button {
 	border: solid black 4px;
 	margin-top: 260px;
 	margin-left: 1430px;
+	position: absolute;
+}
+
+#box13 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 1560px;
+	position: absolute;
+}
+
+#box14 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 0px;
+	margin-left: 1690px;
+	position: absolute;
+}
+
+#box15 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 1820px;
+	position: absolute;
+}
+
+#box16 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 260px;
+	margin-left: 1950px;
+	position: absolute;
+}
+
+#box17 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 2080px;
+	position: absolute;
+}
+
+#box18 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 0px;
+	margin-left: 2210px;
+	position: absolute;
+}
+
+#box19 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
+	margin-left: 2340px;
+	position: absolute;
+}
+
+#box20 {
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 260px;
+	margin-left: 2470px;
 	position: absolute;
 }

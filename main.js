@@ -1,19 +1,17 @@
-// var numbers = ["math.randomize"];
-// console.log(numbers[0]);
-
 // alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
 
-// var $instructionsButton = $("#instructions");
-
-// $("instructionsButton").click(function() {
-// 		console.log("I've been ckicked!");
-// })
 
 
 $(function (){
 
 
-	
+	var $instructionsButton = $("#instructions");
+
+	$instructionsButton.on('click', function(event) {
+			alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
+
+	});
+
 
 var $boxes = $(".box");
 
@@ -36,105 +34,38 @@ function getRandomNumber () {
 
 		// console.log(event.key)
 
-		var numberImput = event.key
+		var numberInput = event.key
 		// console.log(numberInput);
 		var currentBoxValue = $('.incomplete').eq(0).html();
 
-		if (numberImput === currentBoxValue) {
+		if (numberInput === currentBoxValue) {
 			$(".incomplete").eq(0).removeClass('incomplete').addClass('complete');
-			console.log("correct");
+			// console.log("correct");
+				if($boxes.hasClass('complete')) {
+
+	$('.box').css('margin-left', '-=130px')
+	}
 		}
+
+
+
 
 		if ($(".incomplete").length  === 0) {                                                                        
 	alert("You have completed the game!");
-}
+	}
 
-			// var completedBoxValue = $('.complete');
-		// else (currentBoxValue === completedBoxValue) {
-		// 	console.log("I'm done!");
-		// }
-		// once all boxes = complete, alert().
+			
 });
 
 	   
 	
 });
 
-
-// for(var i = 0; i < $boxes.length; i++) {
-
-// // 	if (keypress === getRandomNumber) {
-// // 		console.log("correct");
-// // 	}
-
-// // // console.log(i);
-// // // 	$("#box" + i).html(Math.random);
-// // // 	$boxes:eq(i).html(getRandomNumber);
+// Things to get done to reach MVP:
+// Make buttons move accross screen.
+// Create Timer.
+// Restart button
 
 
 
-// }
-
-
-
-// $(".boxes").on('click', function() {
-// 	for(var i= 0; i < $boxes.length; i++) {
-// 		if($(this).val() === boxes[i]) {
-// 			console.log("correct");
-// 		}
-
-// 	}
-
-
-
-
-
-	
-
-
-	// if (event.key === valueofbox) {
-	// 	console.log("correct");
-	// }
-
-
-
-
-
-
-
-	
-	 //    console.log($currentBoxes);
-	 //    var current = $currentBoxes.eq(0).html();
-	 //    console.log(current);
-
-	 //    if (current === $currentBoxes) {
-
-		// 	console.log("correct");
-		// }
-
-
-
-
-
-
-// });
-
-
-// $( "#other" ).click(function() {
-//   $( "#target" ).keypress();
-// });
-
-// $("#regTitle").html("Hello World");
-
-
-// for (i = 0; i < cars.length; i++) { 
-//     text += cars[i] + "<br>";
-// }
-
-
-
-
-// grab all of the boxes and store them in a variable. 
-
-// loop through each box, change the innerHTML to matching index in the numbers array.
 
