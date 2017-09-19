@@ -9,6 +9,31 @@ button {
 	font: bold;
 	margin: 20px 0px 0px 20px;
 	padding: 5px;
+	display: inline-block;
+}
+
+.topbar {
+	height: 100px;
+	width: 200%;
+	background-color: grey;
+	border: black solid 2px;
+}
+
+.container {
+	/*border: solid blue 4px;*/
+	height: 300px;
+	width: 800px;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+#timer{
+
+	font-size: 50px;
+	color: black;
+	display: inline-block;
+	padding-left: 50px;
+	padding-top: 10px;
 }
 
 .incomplete {
@@ -29,30 +54,18 @@ button {
 	text-align: center;
 }
 
-.topbar {
-	height: 100px;
-	width: 200%;
-	background-color: grey;
-	border: black solid 2px;
-}
 
-/*.wrong {
+
+.wrong {
 	font-size: 50px;
 	background-color: red;
-	background-image: url("images/person.svg");
+/*	background-image: url("images/person.svg");
 	background-size: 70px 70px;
-	background-repeat: no-repeat;
-	background-color: rgba(0, 128, 0, 0.53);
+	background-repeat: no-repeat;*/
+/*	background-color: rgba(0, 128, 0, 0.53);*/
 	text-align: center;
 }
-*/
-.container {
-	/*border: solid blue 4px;*/
-	height: 300px;
-	width: 800px;
-	margin-top: 200px;
-	margin-bottom: 200px;
-}
+
 
 
 
