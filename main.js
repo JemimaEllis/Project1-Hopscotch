@@ -1,42 +1,24 @@
-// alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
+alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
 
 
 
 $(function (){
 
-
+	var $boxes = $(".box");
 	var $instructionsButton = $("#instructions");
+	var $restartButton = $("#restart");
 
 	$instructionsButton.on('click', function(event) {
-			alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
-
+		alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
 	});
 
-
-
-
-
-	var $boxes = $(".box");
-
 	$boxes.each(function(event) {
-
-			$(this).html(getRandomNumber ());
-
-		});
-
-
-
-
+		$(this).html(getRandomNumber ());
+	});
 
 	function getRandomNumber () {
 		return Math.floor(Math.random() * 9) + 1;
-
 	}
-
-
-
-
-
 
 	$(document).on("keypress", function (event) {
 
@@ -61,62 +43,57 @@ $(function (){
 
 		}
 
-
-
-
 		if ($(".incomplete").length  === 0) {                                                                        
-		alert("You have completed the game!");
-
+			alert("You have completed the game with a time of " + $('#timer').html() + "!");
+			clearTimeout(timerstop);
 		}
-
-			
 	});
-
-	   var timer = createTimer(0);
-	
+			
 });
+
+   // var timer = createTimer(0);
+	
+// });
 
 
 var time = 0;
-
 var running = 1;
+// var timerstop;
 
 increment ();
 
 function increment () {
 	if(running === 1) {
-		setTimeout (function () {
+		timerstop = setTimeout (function () {
 			time++;
 			var mins = Math.floor(time/10/60);
 			var secs = Math.floor(time/10 % 60);
 			var hours = Math.floor(time/10/60/60);
 			var tenths = time % 10;
 
-			if(mins < 10)
-			{
+			if(mins < 10) {
 				mins = "0" + mins;
 			}
 
-			if(secs < 10) {
+			if (secs < 10) {
 
 				secs = "0" + secs;
 
 			}
 
-			document.getElementById('timer').innerHTML = hours + ":" + mins + ":" + secs + ":" + tenths + "0";
-
-			increment();
-
-			// // document.getElementById('main-heading').
+// // Old way:
+// // document.getElementById('main-heading').
 
 // // New way:
 
 // var $mainHeading = $('#main-heading');
 
-		},1000)
+			var $timer = $('#timer').html(hours + ":" + mins + ":" + secs + ":" + tenths + "0");
+			increment();
+
+		}, 100)
 	}
 }
-
 
 // create variavle starting at 0
 // Create an interval to repeat a block of code every second which will

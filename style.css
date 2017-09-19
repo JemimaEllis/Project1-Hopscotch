@@ -1,5 +1,6 @@
 body {
-	background: url("images/grass-screenshot.png");
+	/*background: url("images/grass-screenshot.png");*/
+	background-color: green;
 }
 
 button {
