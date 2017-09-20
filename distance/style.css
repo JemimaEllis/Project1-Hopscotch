@@ -13,6 +13,7 @@ button {
 	display: inline-block;
 }
 
+
 .topbar {
 	height: 100px;
 	width: 200%;
@@ -20,26 +21,13 @@ button {
 	border: black solid 2px;
 }
 
-#instructions1 {
-	z-index: 10;
-	height: 300px;
-	width: 600px;
-	margin-top: 150px;
-	margin-left: 100px;
-	margin-bottom: 60px;
-	background-color: black;
-}
-
 .container {
 	/*border: solid blue 4px;*/
-	z-index: -1;
 	height: 300px;
-	width: 800px;
+	width: 300px;
 	margin-top: 150px;
 	margin-bottom: 60px;
-	display: none;
 }
-
 
 #timer{
 
@@ -85,222 +73,184 @@ button {
 
 #box1 {
 	height: 80px;
-	width: 120px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 20px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box2 {
 	height: 80px;
-	width: 120px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 0px;
 	margin-left: 130px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box3 {
 	height: 80px;
-	width: 120px;
-	/*border: solid black 4px;*/
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 260px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 
 #box4 {
 	height: 80px;
-	width: 120px;
-	/*border: solid black 4px;*/
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 260px;
 	margin-left: 390px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box5 {
 	height: 80px;
-	width: 120px;
-	/*border: solid black 4px;*/
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 520px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 
 #box6 {
 	height: 80px;
-	width: 120px;
-/*	border: solid black 4px;*/
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 0px;
 	margin-left: 650px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box7 {
 	height: 80px;
-	width: 130px;
-/*	border: solid black 4px;*/
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 780px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box8 {
-	height: 80px;
-	width: 130px;
-/*	border: solid black 4px;
-*/	margin-top: 260px;
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 260px;
 	margin-left: 910px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 
 #box9 {
-	height: 80px;
-	width: 130px;
-/*	border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 1040px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box10 {
-	height: 80px;
-	width: 130px;
-/*	border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 0px;
 	margin-left: 1170px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 
 #box11 {
-	height: 80px;
-	width: 130px;
-/*	border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 1300px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box12 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
+	border: solid black 4px;
 	margin-top: 260px;
 	margin-left: 1430px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box13 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 1560px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box14 {
-	height: 80px;
-	width: 130px;
-	/*order: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 0px;
 	margin-left: 1690px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box15 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 1820px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box16 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 260px;
 	margin-left: 1950px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box17 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;
-*/	margin-top: 130px;
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
+	margin-top: 130px;
 	margin-left: 2080px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box18 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 0px;
 	margin-left: 2210px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box19 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 130px;
 	margin-left: 2340px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }
 
 #box20 {
-	height: 80px;
-	width: 130px;
-	/*border: solid black 4px;*/
+		height: 80px;
+	width: 80px;
+	border: solid black 4px;
 	margin-top: 260px;
 	margin-left: 2470px;
 	position: absolute;
-	background: url("images/cloud.png");
-	background-size: contain;
 }

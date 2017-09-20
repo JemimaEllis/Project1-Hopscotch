@@ -1,5 +1,3 @@
-alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
-
 
 
 $(function (){
@@ -8,10 +6,23 @@ $(function (){
 	var $instructionsButton = $("#instructions");
 	var $restartButton = $("#restart");
 	var count = 0;
+	var $maingame = $(".container");
+	var $instructions = $("#instructions1");
+	var $play = $("#play");
 
 	$instructionsButton.on('click', function(event) {
-		alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
+		$maingame.hide();
+		$instructions.show();
+
+		// alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
 	});
+
+	$play.on('click', function(event) {
+
+		$maingame.show();
+		$instructions.hide();
+
+	})
 
 	$restartButton.on('click', function(event) {
 		console.log ("restart registered")
