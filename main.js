@@ -15,127 +15,101 @@ $(function (){
 		$instructions.show();
 
 
-	$play.on('click', function(event) {
+		$play.on('click', function(event) {
 
-		$maingame.show();
-		$instructions.hide();
+			$maingame.show();
+			$instructions.hide();
 
-	})
+		})
 
-	$restartButton.on('click', function(event) {
-		console.log ("restart registered")
-		time = 0;
-		clearTimeout(timerstop);
-		increment ();
+		$restartButton.on('click', function(event) {
+			console.log ("restart registered")
+			time = 0;
+			clearTimeout(timerstop);
+			increment ();
+
+			$boxes.each(function(event) {
+					$(this).html(getRandomNumber ());
+			});
+
+			var reset = count * 130;
+			$boxes.css('margin-left', "+=" + reset + "px");
+			count = 0;
+			$(".complete").removeClass('complete').addClass('incomplete');
+
+		});
 
 		$boxes.each(function(event) {
 			$(this).html(getRandomNumber ());
 		});
 
-		var reset = count * 130;
-		$boxes.css('margin-left', "+=" + reset + "px");
-		count = 0;
-		$(".complete").removeClass('complete').addClass('incomplete');
+		function getRandomNumber () {
+			return Math.floor(Math.random() * 9) + 1;
+		}
 
 
+		$(document).on("keypress", function (event) {
 
-	});
 
-	$boxes.each(function(event) {
-		$(this).html(getRandomNumber ());
-	});
+			var numberInput = event.key
+			var currentBoxValue = $('.incomplete').eq(0).html();
 
-	function getRandomNumber () {
-		return Math.floor(Math.random() * 9) + 1;
-	}
+			if (numberInput === currentBoxValue) {
+				$(".incomplete").eq(0).removeClass('incomplete').addClass('complete');
 
-	$(document).on("keypress", function (event) {
+				if($boxes.hasClass('complete')) {
 
-		// console.log(event.key)
+					$('.box').css('margin-left', '-=130px')
+					count++;
+					console.log(count);
+				}
 
-		var numberInput = event.key
-		// console.log(numberInput);
-		var currentBoxValue = $('.incomplete').eq(0).html();
 
-		if (numberInput === currentBoxValue) {
-			$(".incomplete").eq(0).removeClass('incomplete').addClass('complete');
-				// console.log("correct");
-			if($boxes.hasClass('complete')) {
-
-				$('.box').css('margin-left', '-=130px')
-				count++;
-				console.log(count);
 			}
 
-
-		}
-
-		// else if {
-		// 	console.log('peekaboo');
-		// 	$('.incomplete').eq(0).removeClass('incomplete').addClass('wrong');
-		// 	}
-
-
-		if ($(".incomplete").length  === 0) {                                                                        
-			alert("You have completed the game with a time of " + $('#timer').html() + "!");
-			clearTimeout(timerstop);
-		}
-	});
+			if ($(".incomplete").length  === 0) {                                                                        
+				alert("You have completed the game with a time of " + $('#timer').html() + "!");
+				clearTimeout(timerstop);
+			}
+		});
 			
-});
-
-   // var timer = createTimer(0);
-	
-// });
+	});
 
 
-var time = 0;
-var running = 1;
-// var timerstop;
 
-increment ();
 
-function increment () {
-	if(running === 1) {
-		timerstop = setTimeout (function () {
-			time++;
-			var mins = Math.floor(time/10/60);
-			var secs = Math.floor(time/10 % 60);
-			var hours = Math.floor(time/10/60/60);
-			var tenths = time % 10;
+	var time = 0;
+	var running = 1;
+	var timerstop;
 
-			if(mins < 10) {
-				mins = "0" + mins;
-			}
+	increment ();
 
-			if (secs < 10) {
+	function increment () {
+		if(running === 1) {
+			timerstop = setTimeout (function () {
+				time++;
+				var mins = Math.floor(time/10/60);
+				var secs = Math.floor(time/10 % 60);
+				var hours = Math.floor(time/10/60/60);
+				var tenths = time % 10;
 
-				secs = "0" + secs;
+				if(mins < 10) {
+					mins = "0" + mins;
+				}
 
-			}
+				if (secs < 10) {
+					secs = "0" + secs;
+				}
 
-// // Old way:
-// // document.getElementById('main-heading').
 
-// // New way:
 
-// var $mainHeading = $('#main-heading');
+				var $timer = $('#timer').html(hours + ":" + mins + ":" + secs + ":" + tenths + "0");
+				increment();
 
-			var $timer = $('#timer').html(hours + ":" + mins + ":" + secs + ":" + tenths + "0");
-			increment();
-
-		}, 100)
+			}, 100)
+		}
 	}
-}
-
-// create variavle starting at 0
-// Create an interval to repeat a block of code every second which will
-// icnrement that number by one and display that number on the screen.
-// If statement.
-
-// Things to get done to reach MVP:
-// Restart button
-// Make wrong red
+});
 
 
 

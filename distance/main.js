@@ -26,7 +26,7 @@ $(function (){
 
 			$(".complete").eq(0).removeClass('complete').addClass('incomplete');
 			gamePlaying = true;
-			boxestime = 60;
+
 			animateBox();
 		});
 
@@ -54,13 +54,11 @@ $(function (){
 
 
 
-	var boxestime = 60;
+	var boxestime = 30;
 
-	// $boxes.animate({"left": "-=2600px"}, boxestime);
 	function animateBox () {
 		if (gamePlaying) {
 			setTimeout(function () {
-				// $('.box').each(function () {
 					$('.box').css({"margin-left": "-=1px"});
 				// });
 				animateBox();
@@ -75,25 +73,7 @@ $(function (){
 
 
 
-	// setInterval(function() {
-	// 	boxestime = boxestime - 20;
-	// 	// boxestime -= boxestime * 8000 / 100;
-	// 	// console.log('speed: ' + boxestime);
-	// 	// if ($boxes.eq(0).position().left <= '-520') {
-	// 	// 	console.log('box position: ' + $boxes.eq(0).position().left)
-	// 	// 	$boxes.slice(0, 4).remove();
-	// 	// 	console.log('num boxes: ' + $boxes.length);
-	// 	// 	console.log('Success');
-	// 	// 	$boxes = $('.box');
-	// 	// }
-	// }, 1000);
 
-
-	// setInterval(function(){ alert("Hello"); }, 3000);
-
-
-
-	// $boxes.animate({"left": "-=300px", "opacity":1}, "slow");
    
 	$(document).on("keypress", function (event) {
 
@@ -124,9 +104,6 @@ $(function (){
 
 
 
-// Add infinity boxes;
-// miss one - fail
-// get it wrong - fail
 
 
 
