@@ -14,8 +14,6 @@ $(function (){
 		$maingame.hide();
 		$instructions.show();
 
-		// alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
-	});
 
 	$play.on('click', function(event) {
 
