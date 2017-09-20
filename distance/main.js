@@ -5,6 +5,7 @@ alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line 
 $(function (){
 
 	var $container = $('.container');
+	var $containercopy = $(".container");
 	var $boxes = $(".box");
 	var $instructionsButton = $("#instructions");
 	var $restartButton = $("#restart");
@@ -38,15 +39,19 @@ $(function (){
 
 
 
-	var boxestime = 20000;
+	var boxestime = 30000;
 
-	$boxes.animate({"left": "-=2600px"}, 3000)
+	$boxes.animate({"left": "-=2600px"}, boxestime);
+
+	// $boxes.each(function(){
+	// 	$(this).animate({"left": "-=2600px"}, boxestime);
+	// });
 
 
-	// setInterval(function() {
-	// 	boxestime += boxestime * 80 / 100;
-	// 	console.log(boxestime);
-	// }, 1000);
+	setInterval(function() {
+	boxestime -= boxestime * 80 / 100;
+	console.log(boxestime);
+	}, 100);
 
 
 	// setInterval(function(){ alert("Hello"); }, 3000);
@@ -67,7 +72,7 @@ $(function (){
 			 // console.log(count);
 
 		if ($(".incomplete").length  === 0) {                                                                        
-			$('body').append($container);
+			$('body').append($containercopy);
 		}
 
 
@@ -85,6 +90,9 @@ $(function (){
 
 
 
+// Add infinity boxes;
+// miss one - fail
+// get it wrong - fail
 
 
 

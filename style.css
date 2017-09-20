@@ -13,6 +13,11 @@ button {
 	display: inline-block;
 }
 
+#play {
+	margin-top: 200px;
+	margin-left: 320px;
+}
+
 .topbar {
 	height: 100px;
 	width: 200%;
@@ -23,11 +28,12 @@ button {
 #instructions1 {
 	z-index: 10;
 	height: 300px;
-	width: 600px;
-	margin-top: 150px;
+	width: 1000px;
+	margin-top: 200px;
 	margin-left: 100px;
 	margin-bottom: 60px;
-	background-color: black;
+	background-color: white;
+	border-radius: 20%;
 }
 
 .container {
