@@ -7,9 +7,29 @@ $(function (){
 	var $boxes = $(".box");
 	var $instructionsButton = $("#instructions");
 	var $restartButton = $("#restart");
+	var count = 0;
 
 	$instructionsButton.on('click', function(event) {
 		alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
+	});
+
+	$restartButton.on('click', function(event) {
+		console.log ("restart registered")
+		time = 0;
+		clearTimeout(timerstop);
+		increment ();
+
+		$boxes.each(function(event) {
+			$(this).html(getRandomNumber ());
+		});
+
+		var reset = count * 130;
+		$boxes.css('margin-left', "+=" + reset + "px");
+		count = 0;
+		$(".complete").removeClass('complete').addClass('incomplete');
+
+
+
 	});
 
 	$boxes.each(function(event) {
@@ -34,14 +54,18 @@ $(function (){
 			if($boxes.hasClass('complete')) {
 
 				$('.box').css('margin-left', '-=130px')
+				count++;
+				console.log(count);
 			}
 
-		// else {
-		// 	console.log("I'm wrong");
-		// 	// $boxes.addClass('wrong');
-		// }
 
 		}
+
+		// else if {
+		// 	console.log('peekaboo');
+		// 	$('.incomplete').eq(0).removeClass('incomplete').addClass('wrong');
+		// 	}
+
 
 		if ($(".incomplete").length  === 0) {                                                                        
 			alert("You have completed the game with a time of " + $('#timer').html() + "!");
@@ -101,9 +125,8 @@ function increment () {
 // If statement.
 
 // Things to get done to reach MVP:
-// Make buttons move accross screen.
-// Create Timer.
 // Restart button
+// Make wrong red
 
 
 

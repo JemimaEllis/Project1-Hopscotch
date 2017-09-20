@@ -1,6 +1,6 @@
 body {
-	/*background: url("images/grass-screenshot.png");*/
-	background-color: green;
+	background: url("images/clouds background.jpg");
+	background-size: 200%;
 }
 
 button {
@@ -24,7 +24,7 @@ button {
 	/*border: solid blue 4px;*/
 	height: 300px;
 	width: 800px;
-	margin-top: 50px;
+	margin-top: 150px;
 	margin-bottom: 60px;
 }
 
@@ -72,20 +72,22 @@ button {
 
 #box1 {
 	height: 80px;
-	width: 80px;
-	border: solid black 4px;
+	width: 120px;
 	margin-top: 130px;
 	margin-left: 20px;
 	position: absolute;
+	background: url("images/cloud.png");
+	background-size: contain;
 }
 
 #box2 {
 	height: 80px;
-	width: 80px;
-	border: solid black 4px;
+	width: 120px;
 	margin-top: 0px;
 	margin-left: 130px;
 	position: absolute;
+	background: url("images/cloud.png");
+	background-size: contain;
 }
 
 #box3 {
