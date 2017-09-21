@@ -13,8 +13,13 @@ button {
 	display: inline-block;
 }
 
+#style {
+	padding-top: 200px;
+	font-size: 50px;
+	color: grey;
+}
+
 .containermode2 {
-	/*border: solid blue 4px;*/
 	height: 300px;
 	width: 300px;
 	margin-top: 150px;
@@ -52,15 +57,18 @@ button {
 
 #finished {
 	z-index: 10;
-	height: 300px;
+	height: 600px;
 	width: 1000px;
-	margin-top: 200px;
+	margin-top: 50px;
 	margin-left: 100px;
-	margin-bottom: 60px;
-	background-color: white;
-	border-radius: 20%;
+	background: url("images/cloud.png");
+	background-repeat: no-repeat;
+	background-size: 1000px;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 150px;
+/*	border-radius: 20%;*/
+	font-size: 150px;
+	color: grey;
 }
 
 #finished2 {
@@ -69,15 +77,19 @@ button {
 	width: 1000px;
 	margin-top: 200px;
 	margin-left: 100px;
-	margin-bottom: 60px;
-	background-color: white;
+	background: url("images/cloud.png");
+	background-repeat: no-repeat;
+	background-size: 1000px;
+	text-align: center;
+	padding-top: 150px;
 	border-radius: 20%;
 	text-align: center;
 	padding-top: 50px;
+	font-size: 50px;
+	color: grey;
 }
 
 .container {
-	/*border: solid blue 4px;*/
 	z-index: -1;
 	height: 300px;
 	width: 800px;
@@ -110,22 +122,6 @@ button {
 .complete {
 	font-size: 50px;
 	background-color: green;
-/*	background-image: url("images/person.svg");
-	background-size: 70px 70px;
-	background-repeat: no-repeat;*/
-	/*background-color: rgba(0, 128, 0, 0.53);*/
-	text-align: center;
-}
-
-
-
-.wrong {
-	font-size: 50px;
-	background-color: red;
-/*	background-image: url("images/person.svg");
-	background-size: 70px 70px;
-	background-repeat: no-repeat;*/
-/*	background-color: rgba(0, 128, 0, 0.53);*/
 	text-align: center;
 }
 

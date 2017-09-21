@@ -10,6 +10,7 @@ $(function (){
 	var $instructions = $("#instructions1");
 	var $mode1 = $("#mode1");
 	var $finished = $("#finished");
+	var $style = $("#style");
 	clearTimeout(timerstop);
 
 	$maingame.hide();
@@ -101,7 +102,7 @@ $(function (){
 				$maingame.hide();
 				$finished.show();
 				clearTimeout(timerstop);                                                                      
-				$finished.html("You have completed the game with a time of  " + $('#timer').html() + "!");
+				$style.html("You have completed the game with a time of  " + $('#timer').html() + "!");
 
 				
 
