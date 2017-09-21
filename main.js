@@ -9,11 +9,13 @@ $(function (){
 	var $maingame = $(".container");
 	var $instructions = $("#instructions1");
 	var $mode1 = $("#mode1");
+	var $finished = $("#finished");
 	clearTimeout(timerstop);
 
 	$instructionsButton.on('click', function(event) {
 		$maingame.hide();
 		$instructions.show();
+		$finished.hide();
 		clearTimeout(timerstop);
 	
 
@@ -27,6 +29,7 @@ $(function (){
 
 			$maingame.show();
 			$instructions.hide();
+			$finished.hide();
 
 			time = 0;
 			clearTimeout(timerstop);
@@ -51,6 +54,7 @@ $(function (){
 			increment ();
 			$maingame.show();
 			$instructions.hide();
+			$finished.hide();
 
 			$boxes.each(function(event) {
 					$(this).html(getRandomNumber ());
@@ -93,9 +97,9 @@ $(function (){
 
 			if ($(".incomplete").length  === 0) { 
 				$maingame.hide();
-				$instructions.show();
+				$finished.show();
 				clearTimeout(timerstop);                                                                      
-				$instructions.html("You have completed the game with a time of " + $('#timer').html() + "!");
+				$finished.html("You have completed the game with a time of " + $('#timer').html() + "!");
 
 				
 
