@@ -1,7 +1,5 @@
 $(function (){
 
-
-
 	var $containermode2 = $('.containermode2');
 	var $containercopy = $(".container");
 	var $boxes = $(".box");
@@ -20,26 +18,29 @@ $(function (){
 	$finished2.hide();
 
 	$instructionsButton.on('click', function(event) {
-	$maingame.hide();
+		$maingame.hide();
 		$instructions.show();
 		$finished2.hide();
 	});
 
-	$restartButton.on('click', resetGame);
+	$restartButton.on('click', function(event) {
+		
+		$instructions.hide();
+		$finished2.hide();
+		resetGame();
+	});
 
+	$mode2.on('click', function(event) {
 
+		$maingame.show();
+		$instructions.hide();
+		$finished2.hide();
+		resetGame();
 
-$mode2.on('click', function(event) {
-
-			$maingame.show();
-			$instructions.hide();
-			$finished2.hide();
-
-		});
+	});
 
 	function resetGame () {
-
-		console.log ("restart registered")
+		$maingame.show();
 		$('.box').remove();
 		$containermode2.append($resetBoxes.clone());
 		gamePlaying = false;
@@ -50,9 +51,9 @@ $mode2.on('click', function(event) {
 			$(this).html(getRandomNumber ());
 
 			$(".complete").eq(0).removeClass('complete').addClass('incomplete');
+
 			
 		});
-
 	}
 
 	function appendNewNumberElement () {
@@ -72,36 +73,18 @@ $mode2.on('click', function(event) {
 		return Math.floor(Math.random() * 9) + 1;
 	}
 
-
-
-
-	
-
 	function animateBox () {
 		if (gamePlaying) {
-
-
-
 			setTimeout(function () {
 					$('.box').css({"margin-left": "-=2px"});
 				// });
-				// console.log(boxestime)
 				animateBox();
 			}, Math.round(boxestime));
 		}
-
-
 	}
 	animateBox();
-
-	
-
-
-
-
    
 	$(document).on("keypress", function (event) {
-
 
 		var numberInput = event.key
 		var currentBoxValue = $('.incomplete').eq(0).html();
@@ -115,19 +98,17 @@ $mode2.on('click', function(event) {
 				boxestime = Math.round(newTime);
 			}
 
-			
-			console.log(boxestime	)
+
 			appendNewNumberElement();
 
+			count++;
 
 		} else {
 			$maingame.hide();
 			$finished2.show();
-			$finished2.html("Game over! \n \n You managed to pass through _____________________________________________ clouds");
+			$finished2.html("Game over! \n \n You managed to pass through " + count + " clouds");
 			resetGame();
 		}
-
-	
 	});
 			
 });

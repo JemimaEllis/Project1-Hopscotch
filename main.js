@@ -52,7 +52,6 @@ $(function (){
 		});
 
 		$restartButton.on('click', function(event) {
-			console.log ("restart registered")
 			time = 0;
 			clearTimeout(timerstop);
 			increment ();
@@ -93,7 +92,6 @@ $(function (){
 
 					$('.box').css('margin-left', '-=130px')
 					count++;
-					console.log(count);
 				}
 
 
