@@ -103,7 +103,7 @@ $(function (){
 				$maingame.hide();
 				$finished.show();
 				clearTimeout(timerstop);                                                                      
-				$finished.html("You have completed the game with a time of \n " + $('#timer').html() + "!");
+				$finished.html("You have completed the game with a time of  " + $('#timer').html() + "!");
 
 				
 

@@ -11,6 +11,10 @@ $(function (){
 	var gamePlaying = true;
 	var $resetBoxes = $(".box").clone();
 	var boxestime = 60;
+	var $instructions = $("#instructions1");
+	var $mode2 = $("#mode2");
+	var $finished2 = $("#finished2");
+	var $maingame = $(".containermode2");
 
 	$instructionsButton.on('click', function(event) {
 		alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
@@ -18,6 +22,15 @@ $(function (){
 
 	$restartButton.on('click', resetGame);
 
+
+
+$mode2.on('click', function(event) {
+
+			$maingame.show();
+			$instructions.hide();
+			$finished2.hide();
+
+		});
 
 	function resetGame () {
 
