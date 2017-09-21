@@ -106,7 +106,6 @@ $(function (){
 
 				
 
-				// $( "div.demo-container" ).html();
 			}
 		});
 			

@@ -57,34 +57,32 @@ button {
 
 #finished {
 	z-index: 10;
-	height: 600px;
-	width: 1000px;
-	margin-top: 50px;
-	margin-left: 100px;
+	height: 300px;
+	width: 800px;
+	margin-top: 80px;
+	margin-left: 0px;
 	background: url("images/cloud.png");
 	background-repeat: no-repeat;
 	background-size: 1000px;
+	padding: 300px 100px 0 100px;
+	border-radius: 20%;
 	text-align: center;
-	padding-top: 150px;
-/*	border-radius: 20%;*/
-	font-size: 150px;
+	font-size: 50px;
 	color: grey;
 }
 
 #finished2 {
 	z-index: 10;
 	height: 300px;
-	width: 1000px;
-	margin-top: 200px;
-	margin-left: 100px;
+	width: 800px;
+	margin-top: 80px;
+	margin-left: 0px;
 	background: url("images/cloud.png");
 	background-repeat: no-repeat;
 	background-size: 1000px;
-	text-align: center;
-	padding-top: 150px;
+	padding: 300px 100px 0 100px;
 	border-radius: 20%;
 	text-align: center;
-	padding-top: 50px;
 	font-size: 50px;
 	color: grey;
 }
@@ -157,7 +155,6 @@ button {
 #box3 {
 	height: 80px;
 	width: 120px;
-	/*border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 260px;
 	position: absolute;
@@ -169,7 +166,6 @@ button {
 #box4 {
 	height: 80px;
 	width: 120px;
-	/*border: solid black 4px;*/
 	margin-top: 260px;
 	margin-left: 390px;
 	position: absolute;
@@ -180,7 +176,6 @@ button {
 #box5 {
 	height: 80px;
 	width: 120px;
-	/*border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 520px;
 	position: absolute;
@@ -192,7 +187,6 @@ button {
 #box6 {
 	height: 80px;
 	width: 120px;
-/*	border: solid black 4px;*/
 	margin-top: 0px;
 	margin-left: 650px;
 	position: absolute;
@@ -203,7 +197,6 @@ button {
 #box7 {
 	height: 80px;
 	width: 130px;
-/*	border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 780px;
 	position: absolute;
@@ -214,8 +207,7 @@ button {
 #box8 {
 	height: 80px;
 	width: 130px;
-/*	border: solid black 4px;
-*/	margin-top: 260px;
+	margin-top: 260px;
 	margin-left: 910px;
 	position: absolute;
 	background: url("images/cloud.png");
@@ -226,7 +218,6 @@ button {
 #box9 {
 	height: 80px;
 	width: 130px;
-/*	border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 1040px;
 	position: absolute;
@@ -237,7 +228,6 @@ button {
 #box10 {
 	height: 80px;
 	width: 130px;
-/*	border: solid black 4px;*/
 	margin-top: 0px;
 	margin-left: 1170px;
 	position: absolute;
@@ -249,7 +239,6 @@ button {
 #box11 {
 	height: 80px;
 	width: 130px;
-/*	border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 1300px;
 	position: absolute;
@@ -260,7 +249,6 @@ button {
 #box12 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 260px;
 	margin-left: 1430px;
 	position: absolute;
@@ -271,7 +259,6 @@ button {
 #box13 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 1560px;
 	position: absolute;
@@ -282,7 +269,6 @@ button {
 #box14 {
 	height: 80px;
 	width: 130px;
-	/*order: solid black 4px;*/
 	margin-top: 0px;
 	margin-left: 1690px;
 	position: absolute;
@@ -293,7 +279,6 @@ button {
 #box15 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 1820px;
 	position: absolute;
@@ -304,7 +289,6 @@ button {
 #box16 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 260px;
 	margin-left: 1950px;
 	position: absolute;
@@ -315,8 +299,7 @@ button {
 #box17 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;
-*/	margin-top: 130px;
+	margin-top: 130px;
 	margin-left: 2080px;
 	position: absolute;
 	background: url("images/cloud.png");
@@ -326,7 +309,6 @@ button {
 #box18 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 0px;
 	margin-left: 2210px;
 	position: absolute;
@@ -337,7 +319,6 @@ button {
 #box19 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 130px;
 	margin-left: 2340px;
 	position: absolute;
@@ -348,7 +329,6 @@ button {
 #box20 {
 	height: 80px;
 	width: 130px;
-	/*border: solid black 4px;*/
 	margin-top: 260px;
 	margin-left: 2470px;
 	position: absolute;
