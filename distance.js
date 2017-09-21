@@ -46,6 +46,7 @@ $(function (){
 		gamePlaying = false;
 		gamePlaying = true;
 		boxestime = 60;
+		count = 0;
 
 		$('.box').each(function(event) {
 			$(this).html(getRandomNumber ());
