@@ -16,8 +16,13 @@ $(function (){
 	var $finished2 = $("#finished2");
 	var $maingame = $(".containermode2");
 
+	$instructions.hide();
+	$finished2.hide();
+
 	$instructionsButton.on('click', function(event) {
-		alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
+	$maingame.hide();
+		$instructions.show();
+		$finished2.hide();
 	});
 
 	$restartButton.on('click', resetGame);
@@ -116,7 +121,9 @@ $mode2.on('click', function(event) {
 
 
 		} else {
-			alert('Game over ');
+			$maingame.hide();
+			$finished2.show();
+			$finished2.html("Game over! \n \n You managed to pass through _____________________________________________ clouds");
 			resetGame();
 		}
 

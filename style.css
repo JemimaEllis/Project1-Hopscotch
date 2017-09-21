@@ -43,7 +43,9 @@ button {
 	margin-top: 200px;
 	margin-left: 100px;
 	margin-bottom: 60px;
-	background-color: white;
+	background: url("images/cloud.png");
+	background-repeat: no-repeat;
+	background-size: 500px;
 	border-radius: 20%;
 	text-align: center;
 	padding-top: 50px;

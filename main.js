@@ -12,14 +12,15 @@ $(function (){
 	var $finished = $("#finished");
 	clearTimeout(timerstop);
 
-
+	$maingame.hide();
+	$finished.hide();
 
 
 	$instructionsButton.on('click', function(event) {
-		$maingame.hide();
 		$instructions.show();
-		$finished.hide();
 		clearTimeout(timerstop);
+		$maingame.hide();
+	$finished.hide();
 
 	
 
@@ -30,9 +31,8 @@ $(function (){
 		});
 
 	$mode1.on('click', function(event) {
-
+		$instructions.hide();
 			$maingame.show();
-			$instructions.hide();
 			$finished.hide();
 
 			time = 0;
