@@ -13,9 +13,11 @@ button {
 	display: inline-block;
 }
 
-#play {
-	margin-top: 200px;
-	margin-left: 320px;
+#mode1 {
+	margin-top: 20px;
+	text-align: center;
+	
+
 }
 
 .topbar {
@@ -34,6 +36,8 @@ button {
 	margin-bottom: 60px;
 	background-color: white;
 	border-radius: 20%;
+	text-align: center;
+	padding-top: 50px;
 }
 
 .container {

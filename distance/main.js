@@ -58,9 +58,13 @@ $(function (){
 
 	function animateBox () {
 		if (gamePlaying) {
+
+
+
 			setTimeout(function () {
 					$('.box').css({"margin-left": "-=1px"});
 				// });
+				console.log(boxestime)
 				animateBox();
 			}, boxestime);
 		}

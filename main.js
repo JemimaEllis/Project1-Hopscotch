@@ -8,25 +8,49 @@ $(function (){
 	var count = 0;
 	var $maingame = $(".container");
 	var $instructions = $("#instructions1");
-	var $play = $("#play");
+	var $mode1 = $("#mode1");
+	clearTimeout(timerstop);
 
 	$instructionsButton.on('click', function(event) {
 		$maingame.hide();
 		$instructions.show();
+		clearTimeout(timerstop);
+	
 
 
-		$play.on('click', function(event) {
+
+		
+
+		});
+
+	$mode1.on('click', function(event) {
 
 			$maingame.show();
 			$instructions.hide();
 
-		})
+			time = 0;
+			clearTimeout(timerstop);
+			increment ();
+
+			$boxes.each(function(event) {
+					$(this).html(getRandomNumber ());
+			});
+
+			var reset = count * 130;
+			$boxes.css('margin-left', "+=" + reset + "px");
+			count = 0;
+			$(".complete").removeClass('complete').addClass('incomplete');
+				
+
+		});
 
 		$restartButton.on('click', function(event) {
 			console.log ("restart registered")
 			time = 0;
 			clearTimeout(timerstop);
 			increment ();
+			$maingame.show();
+			$instructions.hide();
 
 			$boxes.each(function(event) {
 					$(this).html(getRandomNumber ());
@@ -67,9 +91,15 @@ $(function (){
 
 			}
 
-			if ($(".incomplete").length  === 0) {                                                                        
-				alert("You have completed the game with a time of " + $('#timer').html() + "!");
-				clearTimeout(timerstop);
+			if ($(".incomplete").length  === 0) { 
+				$maingame.hide();
+				$instructions.show();
+				clearTimeout(timerstop);                                                                      
+				$instructions.html("You have completed the game with a time of " + $('#timer').html() + "!");
+
+				
+
+				// $( "div.demo-container" ).html();
 			}
 		});
 			
@@ -109,7 +139,7 @@ $(function (){
 			}, 100)
 		}
 	}
-});
+
 
 
 
