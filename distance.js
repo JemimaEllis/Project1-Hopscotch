@@ -9,26 +9,33 @@ $(function (){
 	var $restartButton = $("#restart");
 	var count = 0;
 	var gamePlaying = true;
+	var $resetBoxes = $(".box").clone();
+	var boxestime = 60;
 
 	$instructionsButton.on('click', function(event) {
 		alert ("HOPSCOTCH \n \n \nINSTRUCTIONS:\n \nAIM OF GAME: Get to the finish line as fast as possible. Type in the number on the square your character is currently on to proceed. Finish in the fastes time possible.");
 	});
 
-	$restartButton.on('click', function(event) {
-		console.log ("restart registered")
+	$restartButton.on('click', resetGame);
 
-		$boxes.each(function(event) {
+
+	function resetGame () {
+
+		console.log ("restart registered")
+		$('.box').remove();
+		$containermode2.append($resetBoxes.clone());
+		gamePlaying = false;
+		gamePlaying = true;
+		boxestime = 60;
+
+		$('.box').each(function(event) {
 			$(this).html(getRandomNumber ());
 
 			$(".complete").eq(0).removeClass('complete').addClass('incomplete');
-			gamePlaying = true;
-
-			animateBox();
+			
 		});
 
-
-
-	});
+	}
 
 	function appendNewNumberElement () {
 		var $newElement = $('.box:first').clone();
@@ -36,7 +43,7 @@ $(function (){
 		$newElement.css({
 			marginLeft: Number($('.box:last').css('margin-left').replace('px', '')) + 130 + 'px'
 		})
-		$$containermode2.append($newElement);
+		$containermode2.append($newElement);
 	}
 
 	$boxes.each(function(event) {
@@ -50,7 +57,7 @@ $(function (){
 
 
 
-	var boxestime = 30;
+	
 
 	function animateBox () {
 		if (gamePlaying) {
@@ -58,11 +65,11 @@ $(function (){
 
 
 			setTimeout(function () {
-					$('.box').css({"margin-left": "-=1px"});
+					$('.box').css({"margin-left": "-=2px"});
 				// });
 				// console.log(boxestime)
 				animateBox();
-			}, boxestime);
+			}, Math.round(boxestime));
 		}
 
 
@@ -84,17 +91,20 @@ $(function (){
 		if (numberInput === currentBoxValue) {
 			$(".incomplete").eq(0).removeClass('incomplete').addClass('complete').remove();
 			// $('.box').stop();	
-			boxestime -= boxestime / 9 ;
+			
+			var newTime = boxestime - boxestime / 5 ;
+			if (newTime >= 0) {
+				boxestime = Math.round(newTime);
+			}
+
+			
+			console.log(boxestime	)
 			appendNewNumberElement();
 
-			// if ($(".incomplete").length  === 0) {                                                                        
-			// 	$('body').append();
-			// }
-			
 
 		} else {
 			alert('Game over ');
-			gamePlaying = false;
+			resetGame();
 		}
 
 	
