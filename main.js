@@ -12,11 +12,15 @@ $(function (){
 	var $finished = $("#finished");
 	clearTimeout(timerstop);
 
+
+
+
 	$instructionsButton.on('click', function(event) {
 		$maingame.hide();
 		$instructions.show();
 		$finished.hide();
 		clearTimeout(timerstop);
+
 	
 
 
@@ -99,7 +103,7 @@ $(function (){
 				$maingame.hide();
 				$finished.show();
 				clearTimeout(timerstop);                                                                      
-				$finished.html("You have completed the game with a time of " + $('#timer').html() + "!");
+				$finished.html("You have completed the game with a time of \n " + $('#timer').html() + "!");
 
 				
 

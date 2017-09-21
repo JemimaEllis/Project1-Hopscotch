@@ -1,9 +1,9 @@
-body {
+/*body {
 	background: url("images/clouds background.jpg");
 	background-size: 200%;
-}
+}*/
 
-button {
+/*button {
 	background-color: grey;
 	color: black;
 	font-size: 30px;
@@ -11,24 +11,24 @@ button {
 	margin: 20px 0px 0px 20px;
 	padding: 5px;
 	display: inline-block;
-}
+}*/
 
 
-.topbar {
+/*.topbar {
 	height: 100px;
 	width: 200%;
 	background-color: grey;
 	border: black solid 2px;
-}
+}*/
 
-.container {
+/*.container {
 	/*border: solid blue 4px;*/
 	height: 300px;
 	width: 300px;
 	margin-top: 150px;
 	margin-bottom: 60px;
-}
-
+}*/
+/*
 #timer{
 
 	font-size: 50px;
@@ -36,37 +36,37 @@ button {
 	display: inline-block;
 	padding-left: 50px;
 	padding-top: 10px;
-}
+}*/
 
-.incomplete {
+/*.incomplete {
 	font-size: 50px;
 	color: black;
 	background-color: grey;
 	text-align: center;
 	font-style: bold;
-}
+}*/
 
-.complete {
+/*.complete {
 	font-size: 50px;
 	background-color: green;
-/*	background-image: url("images/person.svg");
+	background-image: url("images/person.svg");
 	background-size: 70px 70px;
-	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	/*background-color: rgba(0, 128, 0, 0.53);*/
 	text-align: center;
 }
+*/
 
 
-
-.wrong {
+/*.wrong {
 	font-size: 50px;
 	background-color: red;
-/*	background-image: url("images/person.svg");
+	background-image: url("images/person.svg");
 	background-size: 70px 70px;
-	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 /*	background-color: rgba(0, 128, 0, 0.53);*/
 	text-align: center;
-}
+}*/
 
 
 
