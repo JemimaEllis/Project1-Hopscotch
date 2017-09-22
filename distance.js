@@ -108,7 +108,6 @@ $(function (){
 			$maingame.hide();
 			$finished2.show();
 			$finished2.html("Game over! \n \n You managed to pass through " + count + " clouds");
-			resetGame();
 		}
 	});
 			
