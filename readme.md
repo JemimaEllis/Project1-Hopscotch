@@ -5,6 +5,12 @@ Take your mind out our reality and into the sky with this number game that requi
 
 ##How to run
 
+To open up the game, follow this link: [Click here](https://jemimaellis.github.io/Project1-Hopscotch/index.html)
+
+
+
+##Instructions
+
 
 Cloud hop is a numbers typing game. In this game there are 2 different modes.
 
@@ -12,7 +18,6 @@ Cloud hop is a numbers typing game. In this game there are 2 different modes.
 
 * Mode 2: This is an accuracy challenge. One wrong type and it's game over. The amount of clouds are infinite, however, to make it a bit harder, the speed of the clouds moving across the screen will speed up as you go!
 
-##Instructions
 
 How to play:
 
